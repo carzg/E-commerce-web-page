@@ -1,0 +1,179 @@
+/**********
+*日期：2020/10/28
+*作者：luke
+*用途：产品详情页的css
+*other:none
+*version:1.0B
+*/
+/* 大小图 */
+.productWrap{
+    width:1313px;height:600px;margin:20px auto;
+}
+.productImgWrap{
+    width:496px;height:600px;
+}
+.productImg{
+    width:495px;height:495px;
+    border:1px solid #ddd;
+    position: relative;
+}
+.productImg img.goodsImg{
+    width: 495px;height:495px;
+}
+.productImg i.icons{
+    display:block;width:33px;height:33px;
+    position: absolute;bottom:0;right:0;
+    background: url(../../image/icons/icon_6.png) no-repeat;
+    z-index: 5;
+}
+
+/* 遮罩 */
+.maskDiv{
+    width:150px;height:150px;
+    position: absolute;top:30%;left:30%;
+    background-color: #e3921e;
+    border:1px solid #a25a1a;
+    opacity: 0.7;cursor:move;
+}
+/* 局部大图 */
+.localImgDiv{
+    width:495px;height:495px;position: absolute;
+    top:0;right:-485px;background: #fff;
+    overflow: hidden;
+}
+.localImgDiv img{
+    width: 1500px;height:1500px;position:absolute;top:0;left:0;
+}
+/* 产品小图列表 */
+.goodsList{
+    width:495px;height:80px;overflow: hidden;
+    position: relative;
+}
+.goodsList label, .goodsList span{
+    width: 26px;height:43px;display:block;position: absolute;
+    top:24px;cursor: pointer;
+}
+.goodsList label{left:0;background: url(../../image/icons/icon_7.png) no-repeat;}
+.goodsList span{right:0;background: url(../../image/icons/icon_8.png) no-repeat;}
+.goodsList ul{width: 460px;position: absolute;top:14px;left:28px;}
+.goodsList ul li{
+    width: 47px;height:50px;float: left;margin-right: 14px;
+    border:2px solid #fff;
+}
+.goodsList ul li img{width: 47px;height:47px;}
+.goodsList ul li:hover{
+    border:2px solid #f00;
+}
+
+/* 右边容器 */
+.productInfo{
+    width: 800px;
+}
+/* 产品title */
+.goodsTitle{
+    width:100%;height:100px;
+}
+.goodsTitle h1{
+    font-size: 22px;
+}
+.goodsTitle li{font-size:14px;color:#f00}
+
+/* 配送地址 */
+.addressWrap{
+    width:470px; clear:both;
+}
+.addressTitle{
+    height:24px;padding:0 5px; line-height: 24px;
+    font-size: 12px;color:#666;
+    border:solid 1px #ccc;
+    border-bottom: 0;
+    float: left;clear:both;
+    background: #fff;
+    position: relative;
+    z-index: 4;
+}
+.addressTitle i{
+    width: 32px;height:9px;
+    background:url(../../image/icons/icon_9.png) no-repeat 0;
+    float:right;margin:7px 0 0 3px;
+}
+.addressList{
+    width: 374px;padding:35px 11px;
+    border:solid 1px #ccc;
+    float: left;
+    clear:both;
+    background: #fff;
+    margin-top: -1px;
+    z-index: 3;
+}
+.addressTabBtn{
+    width:100%;  clear:both;
+    border-bottom:2px solid #edd288;
+}
+.addressTabBtn li{
+    float: left;height:24px;padding:0 11px;line-height: 24px;
+    font-size:12px;color:#005aa0;margin-right:9px;
+    border:solid 1px #ccc;cursor:pointer;
+    margin-bottom:-2px;background:#fff;
+}
+.addressTabBtn li.yellowLi{
+    border:solid 2px #edd288;border-bottom:0;
+}
+.addressName{
+    width:100%;padding:14px;
+}
+.addressName li{
+    height:24px;line-height: 24px;text-align: left;
+    font-size: 12px;width:70px;float:left;margin-right: 13px;
+    color:#666;;padding-left:5px;overflow: hidden;
+    cursor:pointer;
+}
+.addressName li:hover{
+    background:#ddd;border-radius: 5px;
+}
+
+/* 加入购物车 */
+.gotoShopWrap{
+    margin:21px 0 0 61px; float:left; clear:both;
+}
+
+.goodsNum{
+    width:54px;height:48px;float:left;margin-right: 11px;
+    border:1px solid #ddd;position:relative;overflow: hidden;
+}
+
+.goodsNum input.input_a,
+.goodsNum input.input_b,
+.goodsNum input.input_c{
+    position:absolute;
+}
+
+.goodsNum input.input_a{
+    width:37px;height:48px;left:0;top:0;font-size: 22px;
+    text-align: center;line-height: 48px;color:#666;
+    border:0;border-right: 1px solid #ddd;
+}
+
+.goodsNum input.input_b:hover,
+.goodsNum input.input_c:hover{
+    background:#ddd;
+}
+
+.goodsNum input.input_b{
+    width:16px;height:24px;background:#f1f1f1;
+    font-size: 16px;text-align: center;line-height: 25px;
+    right:0; top:0;border:0;border-bottom: 1px solid #ddd;
+    cursor:pointer;
+}
+.goodsNum input.input_c{
+    width:16px;height:24px;background:#f1f1f1;
+    font-size: 16px;text-align: center;line-height: 25px;
+    right:0;bottom:-1px;border:0;border-bottom: 1px solid #ddd;
+    cursor:pointer;
+}
+.gotoCartBtn{
+    width:157px; height:50px;background:#f00;color:#fff;
+    font-size: 22px;text-align: center;line-height: 50px;
+    float: left;cursor:pointer;
+}
+

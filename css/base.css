@@ -1,0 +1,20 @@
+/**********
+*日期：2020/10/24
+*作者：luke
+*用途：大的结构
+*other:none
+*version:1.0
+*/
+
+/*header*/
+.header{
+    width:1192px;height:260px;background-color: #f6f6f6;
+    padding: 0 0 0 260px;
+    margin: 0 auto;
+    position: relative;
+}
+/* main */
+#mainID{
+    width:1452px;height:565px;background-color: #f6f6f6;
+    margin: 0 auto;
+}

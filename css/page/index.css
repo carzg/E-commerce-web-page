@@ -1,0 +1,252 @@
+/**********
+*日期：2020/10/24
+*作者：luke
+*用途：首页的css
+*other:none
+*version:1.0B
+*/
+
+/*logo*/
+.logoDiv{
+    width: 260px;;height: 260px;
+    position: absolute;top:0;left: 0;
+}
+
+/*顶部导航条*/
+.topMenu{
+    width: 100%;height: 40px;
+    background-color: #e3e4e6;
+    border-bottom: 1px solid #ddd;
+    float:left;
+}
+
+.topMenu label.cityName{
+    height: 34px;color: #6f6e71;
+    background-image:url('../../image/icons/icon_1.png');
+    background-repeat: no-repeat;
+    padding:10px 0 0 30px;
+    margin:1px 0 0 20px;
+    float:left;
+}
+
+.topMenu ul{float:right;}
+
+.topMenu ul li{float: left;padding:0 12px;color: #6f6e71;line-height: 40px;}
+
+.topMenu ul li p{float:left;}
+
+.topMenu ul li i.popUpBtn{
+    width:25px;height:13px;float: right;margin: 12px 0  0 4px;
+    background: url('../../image/icons/icon_2.png')no-repeat;
+    cursor:pointer;
+}
+
+.topMenu ul li.red{color: #ff0000;}
+
+.topMenu ul em{width: 1px;height: 14px;background: #6f6e71;float:left;margin-top: 13px;}
+
+/*header搜索框*/
+.searchWrap{
+    width: 800px;height: 45px;
+    position: absolute;top:90px; left:470px;
+}
+input.headerSearch{
+    width:445px; height:43px; background-color: #fff;
+    border:solid 1px #f00;color:#6f6e71;
+    float:left;padding-left: 5px;
+}
+input.searchBtn{
+    width:70px; height:45px;
+    border:0px; float:left;
+    background-image: url('../../image/icons/icon_3.png');
+    background-position: 17px 5px;
+    background-color: #c81632;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.myShopDiv{
+    width:105px; height:43px; background:#fff;
+    border:1px solid #ddd; float:left; margin-left: 51px;
+    color:#f00;padding-left: 65px;line-height: 43px;
+    background-image: url('../../image/icons/icon_4.png');
+    background-position: 17px 5px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/*栏目导航条*/
+.columnDiv{
+    position: absolute;bottom:11px;left:300px;
+}
+.columnDiv li{
+    float:left;color:#565455;
+    padding:0 30px;font-size: 18px;font-weight: bold;
+}
+.columnDiv li.red{
+    color: #f00;
+}
+
+.columnDiv em{
+    width: 1px;height: 18px;background: #6f6e71;float:left;margin: 5px 16px 0 16px;
+}
+.columnDiv i.hot{
+    width: 44px;height:23px;
+    background-image: url('../../image/icons/icon_5.png');
+    background-repeat: no-repeat;
+    top:-10px;right:-15px;
+    display: block;
+}
+
+/* product导航条 */
+.productNav{
+    float: left;width: 260px;height: 565px;
+    background-color: #6E6568;
+}
+.productNav ul{
+    margin-top: 20px;
+}
+.productNav ul li{
+    clear:both;
+    height:36px;
+    padding-left:14px;
+    position: relative;
+}
+
+/* 定义了li标签的hover */
+.productNav ul li:hover{
+    background-color:#ddd;
+    cursor:pointer;
+}
+
+.productNav ul li p{
+    line-height: 36px;
+    text-align: left;font-size:15px;
+    color:#ddd;
+}
+
+/* 定义了li标签里p的hover */
+.productNav ul li:hover p{
+    color:#6E6568;
+    cursor:pointer;
+}
+.productNav ul li div.popup{
+    width: 200px;height:240px;background-color:#ddd;
+    position: absolute;top:0;left:260px;
+    display:none;z-index: 12;
+}
+.productNav ul li:hover div.popup{
+    display:block;
+}
+
+/* 轮播图 */
+.sliderDiv{
+    width:1176px;height:397px;float:right;overflow: hidden;
+    position: relative;
+}
+
+.sliderDiv ul{
+    width:4752px;position:absolute;top:0;left:0;z-index: 8;
+}
+.sliderDiv ul li{
+    width:1188px;height:397px;float:right;overflow: hidden;
+}
+
+.sliderDiv ul li img{width:1188px;height:397px;}
+
+.sliderDiv label, .sliderDiv span{
+    width:45px;height:80px;background-color: #000;
+    position:absolute;top:160px;font-size: 30px;color:#fff;
+    text-align: center;line-height: 80px;
+    cursor:pointer;
+    opacity:0.4;z-index: 9;
+}
+.sliderDiv label{left:0;}
+.sliderDiv span{right:0;}
+.sliderDiv label:hover{
+    opacity:0.7;
+}
+.sliderDiv span:hover{
+    opacity:0.7;
+}
+/* 小白点 */
+.pointerBtn{
+    width:239px;height:25px;position: absolute;z-index: 10;
+    bottom:25px;left:50%;margin-left: -120px;
+}
+
+.pointerBtn ul{
+    width:auto;position:static;
+}
+.pointerBtn ul li{
+    background:#fff;border-radius: 100%;margin:5px 0px 0 13px;
+    width:15px;height:15px;float:left;
+}
+
+.pointerBtn ul li.bgRed{
+    background:#f00;
+}
+
+.pointerBtn ul li:hover{
+    background:#f00;cursor:pointer;
+}
+
+/* 小白点半透明背景 */
+.pointerBtnBg{
+    width:239px;height:25px;position: absolute;z-index: 10;
+    bottom:25px;left:50%;margin-left:-120px;background-color: #fff;opacity:0.5;
+    border-radius: 10px;
+}
+
+/* 广告位 */
+.adDiv{
+    width:1176px;height:153px;float:right;
+}
+.adDiv img{
+    width:580px;height:153px;
+}
+
+/* 享品质 title */
+.productListTitle{
+    width:1430px; height:55px;margin:0 auto;
+    background-image: url("../../image/bg_1.jpg");
+    background-color: #f6f6f6;
+    background-position: center;
+    background-repeat: repeat-x;
+    text-align: center;
+}
+.productListTitle p{
+    display:inline-block;padding:0 60px; height:55px;
+    background: #f6f6f6;line-height: 55px;
+    font-size:28px;
+}
+/* 产品列表 */
+.productList{
+    width:1445px;height:224px;margin:0 auto;
+}
+.productBlock{
+    width:475px;height:224px;
+}
+.productBg_1{background:url(../../image/temp/temp_1.png)no-repeat;}
+.productBg_2{background:url(../../image/temp/temp_1.png)no-repeat;}
+.productBg_3{background:url(../../image/temp/temp_1.png)no-repeat;}
+
+.productBlock dl{
+    height:224px;width:200px;float:left;
+}
+
+.productBlock dl.bg_1{background-color: #d78e28;}
+.productBlock dl.bg_2{background-color: #498c94;}
+.productBlock dl.bg_3{background-color: #5c5566;}
+
+.productBlock dl dt{
+    width:140px;height:60;margin:55px auto 0 auto;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    text-align: center;line-height: 60px;color:#fff;
+    font-size: 30px;
+}
+.productBlock dl dd{
+    width:140px;height:60;margin:0 auto;
+    text-align: center;line-height: 60px;color:#fff;
+    font-size: 19px;
+}
